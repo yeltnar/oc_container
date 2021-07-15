@@ -7,3 +7,5 @@ RUN curl -O https://mirror.openshift.com/pub/openshift-v4/clients/ocp/stable/ope
 RUN mkdir oc_folder && cd oc_folder && tar -zxvf ../openshift-client-linux.tar.gz
 
 RUN echo 'export PATH="/oc_folder:$PATH"' >> ~/.bashrc
+
+CMD tail -f /dev/null
